@@ -6,7 +6,7 @@ resource "aws_instance" "my_instance" {
   instance_type = "t2.micro"
 
   tags = {
-    Name    = join("_", var.project, "VPC")
+    Name    = join("_", var.project, "EC2")
     Project = var.project
   }
 
